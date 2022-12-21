@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="All the webpages, websites and applications I've created.">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/page.css" />
+  <link rel="stylesheet" href="static/css/projects.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Hanningtone Monda: Projects</title>
+</head>
+
+<body>
+  <nav class="visible">
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        Hanningtone Monda
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects" class="link active">projects</a>
+        <a href="articles" class="link">articles</a>
+        <a href="/#contact" class="link">contact</a>
+        <div class="social-media">
+          <a href="https://github.com/HanningtoneM" title="Github">
+            <i class="demo-icon icon-github-circled"></i>
+          </a>
+          <a href="https://twitter.com/Hanningtone254?t=YVXXz9EZzOhR5vPi3DlHDQ&s=09" title="Twitter">
+            <i class="demo-icon icon-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/hanningtonemachuka/" title="LinkedIn">
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
+          <a href="https://angel.co/u/hanningtone-monda" title="AngelList">
+            <i class="fab fa-angellist"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"> 
+
+        </button>
+        <button id="theme-display" class="control">
+          <i class="demo-icon icon-cog" title="Theme Select"></i>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="container">
+      <h1 class="section-title">Projects <span class="title-icon">&#128187;</span></h1>
+      <p class="section-subtitle">
+        Over the course of my career as a front-end developer, I've built several websites and applications. These are
+        most of them:
+      </p>
+    </section>
+    <section id="websites" class="container">
+      <h2 class="subsection-title">
+        Webpages (4)
+      </h2>
+      <div class="main-text project-scroll">
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/colorPicker.png" width="720" height="340" alt="Color Picker">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Color picker</h3>
+            <p>A site that auto generates random colors</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hanningtonem.github.io/Color-picker-/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/HanningtoneM/Color-picker-" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/Ponggame.png" width="720" height="340" alt="Ponggame">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Pong game</h3>
+            <p>A Pong game that is developed using JavaScript and uses can play against the Computer</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hanningtonem.github.io/pong-game/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/HanningtoneM/pong-game" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/MathMagician.png" width="720" height="340" alt="Math Magician">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Math Magician</h3>
+            <p>A math Magician app built with React it has a calculator that allows users to do calculations</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://math-pompie.netlify.app/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/HanningtoneM/math-magician" target="_blank"
+                rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/FoodRecipe.png" width="720" height="340" alt="Food Recipe Website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Food Recipe Website</h3>
+            <p>A Food recipe website that allows users to choose between beef, pasta and Seafood and the data is fetched from Food API</p>
+            <ul class="project-tags">
+              <li>HTML</li>3
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hanningtonem.github.io/Capstone-Recipe/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/HanningtoneM/Capstone-Recipe" target="_blank"
+                rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="apps" class="container">
+      <h2 class="subsection-title">
+        front-end Mentor(5)
+      </h2>
+      <div class="main-text project-scroll">
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/Countdowntimer.png" width="720" height="340" alt="Countdown timer">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Countdown timer</h3>
+            <p>A Countdown web page that has set dates for certain events and counts down to them</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>JavaScript</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hanningtonem.github.io/Count-down-Timer/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/HanningtoneM/Count-down-Timer" target="_blank" rel="noopener">source code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/Toddolist.png" width="720" height="340" alt="A Todo list application">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Todo List</h3>
+            <p>A Todo list application that allows users to add, edit and remove completed tasks</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hanningtonem.github.io/to-do-list/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/HanningtoneM/to-do-list" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/Product-View-Card.png" width="720" height="340"
+              alt="A Product View Card">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">A Product View Card</h3>
+            <p>A WebPage that shows a product view card</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hanningtonem.github.io/product-view-card/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/HanningtoneM/product-view-card" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/Qrcode.png" width="720" height="340"
+              alt="A Qrcode card">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">A QR Code Card</h3>
+            <p>A WebPage that shows a Qr code card</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hanningtonem.github.io/QR-Code/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/HanningtoneM/QR-Code" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/Previewcard.png" width="720" height="340"
+              alt="A Preview Card">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">A preview Card</h3>
+            <p>A webPage that displays a preview card</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://viewcardhanningtone.netlify.app/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/HanningtoneM/preview-card" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="page-nav container">
+    <a href="about">&#8592; About</a>>
+  </div>
+  <div class="wave-border top">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: var(--shade-100)"></path>
+      <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+        style="stroke: var(--neon-color);fill: none;"></path>
+    </svg>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://github.com/HanningtoneM" title="Github">
+          <i class="demo-icon icon-github-circled"></i>
+        </a>
+        <a href="https://twitter.com/Hanningtone254?t=YVXXz9EZzOhR5vPi3DlHDQ&s=09" title="Twitter">
+          <i class="demo-icon icon-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hanningtonemachuka/" title="LinkedIn">
+          <i class="demo-icon icon-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+
+</html>
