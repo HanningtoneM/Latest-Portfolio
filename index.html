@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description"
+    content="Hanningtone Monda is a self-taught Front End Developer and school-taught Full-Stack Developer from Nairobi, Kenya.">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Hanningtone Monda: Front End Developer</title>
+</head>
+
+<body>
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+        <div class="logo-container">
+          <span class="logo animate-logo">Hanningtone Monda</span>
+        </div>
+        <div class="header-text">
+          <h1>
+            <p class="animate-text-1">Self-taught Front End Developer,</p>
+            <p class="animate-text-2">School-taught Full-Stack Developer</p>
+          </h1>
+        </div>
+        <h2 class="animate-subtitle">
+          I build websites with a focus on responsive design and accessibility.
+        </h2>
+        <div class="scroll-button animate-scroll" tabindex="0">
+          <div class="arrow">↓</div> scroll
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        Hanningtone Monda
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects.html" class="link">projects</a>
+        <a href="/#articles" class="link">articles</a>
+        <a href="/#contact" class="link">contact</a>
+        <div class="social-media">
+          <a href="https://github.com/HanningtoneM" title="Github">
+            <i class="demo-icon icon-github-circled"></i>
+          </a>
+          <a href="https://twitter.com/Hanningtone254?t=YVXXz9EZzOhR5vPi3DlHDQ&s=09" title="Twitter">
+            <i class="demo-icon icon-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/hanningtonemachuka/" title="LinkedIn">
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i class="demo-icon icon-cog"></i>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="about">
+      <div class="container inner-container">
+        <div class="intro scroll-in">
+          <h2 class="section-title">Hello, I'm Hanningtone Monda <span class="title-icon">&#128578;</span></h2>
+          <div class="section-subtitle">
+            <p> I’m a self-taught Front End Developer and School-taught Full-Stack Developer from Kenya.</p>
+            <p>
+              I've been building websites since 2020 with a focus on responsive
+              design,
+              accessibility and pleasing
+              aesthetics.</p>
+            <p>I also <a href="articles">write articles</a> and I have my works published on <a
+                href="https://hanningtonethoughts.hashnode.dev/" target="_blank" rel="noopener">Hashnode</a>,
+            </p>
+          </div>
+          <div class="section-link">
+            <a href="about.html" class="link-btn">More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color);fill: none;"></path>
+      </svg>
+    </div>
+    <section id="projects">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Projects <span class="title-icon">&#128187;</span></h2>
+          <p class="section-subtitle">
+            I tend to freelance from time to time or build projects for fun.
+            Here are some of my most recent projects:
+          </p>
+        </div>
+        <div class="project-container">
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/womensummitdesktop.png" width="720" height="340" alt="Kenya women's website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://hanningtonem.github.io/Women-summit/" target="_blank" rel="noopener"> Kenya women's summit </a>
+                </h3>
+                <div class="project-description">
+                  <p>I built this project for a Kenya Women-summit as one of my projects to higlight some of the issue facing women in my country.</p>
+                </div>
+                <ul class="project-tags" title="Technologies used">
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">HTML</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://hanningtonem.github.io/Women-summit/" target="_blank" rel="noopener" class="link-btn">visit site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/Cryptoscre.png" width="720" height="340"
+                alt="Crypro currency website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://cryptocurrencyhanningtone.netlify.app/" target="_blank" rel="noopener">
+                    Crypto Currency Website
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I built this website to test my React and Redux skills and also to improve my knowledge in APIS, This website uses a Coin based API to display 
+                    realtime Crypto prices of individual coins.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">React</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://cryptocurrencyhanningtone.netlify.app/" target="_blank" rel="noopener"
+                    class="link-btn">Visit Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/spacedesktop.png" width="720" height="340"
+                alt="Jemima Abu: Self Taught Developer, School Taught Engineer">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://spacetravelhanningtone.netlify.app" target="_blank" rel="noopener">
+                    Space Travel Website
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I built this website to test my React and Redux skills and also to improve my knowledge in APIS, This website uses Space X API to give real time data 
+                    of space missions and Rockets.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">React</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://spacetravelhanningtone.netlify.app" target="_blank" rel="noopener"
+                    class="link-btn">Visit Site</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="projects.html" class="link-btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none;"></path>
+      </svg>
+    </div>
+
+    <section id="articles">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Articles <span class="title-icon">&#128466;</span></h2>
+          <p class="section-subtitle">
+            I write the type of articles that cover some of the issues that i faced as a developer in my early years to help new developers understand some of the
+            concepts that they might be struggling with:
+          </p>
+        </div>
+        <div class="articles-container">
+          <div class="article scroll-in">
+            <div class="article-image">
+              <a href="https://hanningtonethoughts.hashnode.dev/all-you-need-to-know-about-html"
+                target="_blank" rel="noopener">
+                <img src="./static/images/articles/htmlarticle.jpeg"
+                  alt="All you need to know about HTML">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                <a href="https://hanningtonethoughts.hashnode.dev/all-you-need-to-know-about-html"
+                  target="_blank" rel="noopener">HASHNODE</a>
+              </div>
+              <h3 class="article-title">
+                <a href="https://hanningtonethoughts.hashnode.dev/all-you-need-to-know-about-html"
+                  target="_blank" rel="noopener">
+                  All you need to know about HTML
+                </a>
+              </h3>
+              <div class="article-description">
+                <p>
+                  In this article, we'll discover what HTML is, what it's used for,
+                  and some of the essential HTML Tags.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="article scroll-in">
+            <div class="article-image">
+              <a href="https://hanningtonethoughts.hashnode.dev/javascript-array-methods-every-developer-should-know"
+                target="_blank" rel="noopener">
+                <img src="./static/images/articles/JavaScriptArray.png"
+                  alt="A Beginner's Guide To Creating A Portfolio Website">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                <a href="https://hanningtonethoughts.hashnode.dev/javascript-array-methods-every-developer-should-know"
+                  target="_blank" rel="noopener">HASHNODE</a>
+              </div>
+              <h3 class="article-title">
+                <a href="https://hanningtonethoughts.hashnode.dev/javascript-array-methods-every-developer-should-know"
+                  target="_blank" rel="noopener">
+                  JavaScript Array Methods every Developer should know</a>
+              </h3>
+              <div class="article-description">
+                <p>
+                  In this article, I will take you through some of the most important JavaScript array methods this will help you improve some of your skills in coding
+                  challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="article scroll-in">
+            <div class="article-image">
+              <a href="https://hanningtonethoughts.hashnode.dev/4-javascript-interview-questions-you-must-know"
+                target="_blank" rel="noopener">
+                <img src="./static/images/articles/Interview-Questions.jpg"
+                  alt="Handling Scroll Based Animation With Vanilla JavaScript">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                <a href="https://hanningtonethoughts.hashnode.dev/4-javascript-interview-questions-you-must-know"
+                  target="_blank" rel="noopener">HASHNODE</a>
+              </div>
+              <h3 class="article-title">
+                <a href="https://hanningtonethoughts.hashnode.dev/4-javascript-interview-questions-you-must-know"
+                  target="_blank" rel="noopener">
+                  4 Javascript Interview questions you must know
+                </a>
+              </h3>
+              <div class="article-description">
+                <p>
+                  In this article, we'll go through some examples of questions that you are most likely to get asked in an Interview setup this may help you familirize
+                  yourself in an Interview enviroment and also learn more JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <section id="contact">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Contact <span class="title-icon">&#128231;</span></h2>
+
+        </div>
+        <div class="contact-content">
+          <div class="form-container scroll-in">
+            <noscript>This form won't work without JavaScript but you can send me a message on <a
+                href="https://twitter.com/Hanningtone254?t=YVXXz9EZzOhR5vPi3DlHDQ&s=09"
+                style="text-decoration: underline;">Twitter</a> or <a href="https://www.linkedin.com/in/hanningtonemachuka/"
+                style="text-decoration: underline;">LinkedIn</a>.</noscript>
+            <p class="success-message"></p>
+            <form name="contact" method="POST" action="https://formspree.io/f/xayvlepl">
+              <div class="input-container">
+                <input type="text" id="name" name="name" required class="form-input" />
+                <label for="name">Name:</label>
+              </div>
+              <div class="input-container">
+                <input type="email" id="email" name="email" required class="form-input" />
+                <label for="email">Email:</label>
+              </div>
+              <div class="input-container">
+                <input type="text" id="subject" name="subject" class="form-input" />
+                <label for="subject">Subject (optional):</label>
+              </div>
+              <div class="input-container">
+                <textarea required maxlength="1000" id="message" name="message" class="form-input"></textarea>
+                <label for="message">Message:<br> </label>
+                <small>
+                  <span id="message-count">1000</span> characters
+                </small>
+              </div>
+              <div>
+                <button type="submit" class="link-btn">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="links-container scroll-in">
+            <h3>Other links:</h3>
+            <ul>
+              <li>
+                <a href="https://docs.google.com/document/d/1HmEnMKbPnLIatAmeMAtYJdpVbxuqzj7UPddQN_8swvo/edit?usp=sharing"
+                  class="contact-link">download my
+                  resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://github.com/HanningtoneM" title="Github">
+          <i class="demo-icon icon-github-circled"></i>
+        </a>
+        <a href="https://twitter.com/Hanningtone254?t=YVXXz9EZzOhR5vPi3DlHDQ&s=09" title="Twitter">
+          <i class="demo-icon icon-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hanningtonemachuka/" title="LinkedIn">
+          <i class="demo-icon icon-linkedin"></i>
+        </a>
+        <a href="https://angel.co/u/hanningtone-monda" title="AngelList">
+          <i class="fab fa-angellist"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static/js/landing-page.js"></script>
+
+</html>
