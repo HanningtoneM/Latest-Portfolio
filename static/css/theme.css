@@ -145,23 +145,6 @@
   display: none;
 }
 
-.neon input[value="all"]:checked ~ .post-tags label[data-post="all"],
-.neon
-  input[value="javascript"]:checked
-  ~ .post-tags
-  label[data-post="javascript"],
-.neon
-  input[value="portfolio"]:checked
-  ~ .post-tags
-  label[data-post="portfolio"],
-.neon
-  input[value="conferences"]:checked
-  ~ .post-tags
-  label[data-post="conferences"] {
-  border-color: var(--neon-color);
-  color: var(--shade-500);
-}
-
 .neon .input-container.focused .form-input {
   border-color: var(--neon-color);
 }
@@ -272,7 +255,7 @@
   background-color: #e41376;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: green) {
   :root.green {
     --background-color: #f4f4f4;
     --text-color: #1b3817;
