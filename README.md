@@ -16,7 +16,7 @@ this project is the beginning of my microverse curriculum. building a mobile por
 
 ## Getting Started
 
-To get a local copy up and running:
+To get a local copy up and running :
 
 1. Clone this repository or download the Zip folder:
 
